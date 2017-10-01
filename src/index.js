@@ -6,6 +6,10 @@ import {
   Pantograph
 } from 'shinkansen-pantograph'
 
+export {
+  history
+}
+
 export default function routingMiddleware (store) {
   const last = (action) => (
     Pantograph.graphite({ history, store, action })

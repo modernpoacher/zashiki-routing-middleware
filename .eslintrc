@@ -5,10 +5,5 @@
   "parserOptions": {
     "ecmaVersion": 6
   },
-  "parser": "babel-eslint",
-  "settings": {
-    "import/resolver": {
-      "babel-module": {}
-    }
-  }
+  "parser": "babel-eslint"
 }
