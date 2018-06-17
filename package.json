@@ -1,6 +1,6 @@
 {
   "name": "zashiki-routing-middleware",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Redux Routing middleware for Zashiki",
   "main": "./index.js",
   "scripts": {
@@ -21,9 +21,9 @@
     "node": ">=7.0.0"
   },
   "dependencies": {
-    "react": "^16.0.0",
+    "react": "^16.2.0",
     "react-router": "3.0.5",
-    "shinkansen-pantograph": "0.0.10"
+    "shinkansen-pantograph": "0.0.11"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
