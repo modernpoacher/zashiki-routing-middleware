@@ -24,7 +24,7 @@
   "license": "MIT",
   "author": "Jonathan Perry for Modern Poacher Limited",
   "dependencies": {
-    "react": "^16.8.6",
+    "react": "16.8.6",
     "react-router": "3.0.5",
     "shinkansen-pantograph": "0.0.17"
   },
