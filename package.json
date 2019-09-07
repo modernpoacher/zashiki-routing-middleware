@@ -24,9 +24,7 @@
   "license": "MIT",
   "author": "Jonathan Perry for Modern Poacher Limited",
   "dependencies": {
-    "react": "^16.9.0",
-    "react-router": "^5.0.1",
-    "shinkansen-pantograph": "1.0.0"
+    "shinkansen-pantograph": "^1.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -46,6 +44,11 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^3.0.5"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1"
   },
   "husky": {
     "hooks": {
