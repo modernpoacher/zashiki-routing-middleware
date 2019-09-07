@@ -24,7 +24,7 @@
   "license": "MIT",
   "author": "Jonathan Perry for Modern Poacher Limited",
   "dependencies": {
-    "shinkansen-pantograph": "^1.0.0"
+    "shinkansen-pantograph": "^1.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
