@@ -24,7 +24,7 @@
   "license": "MIT",
   "author": "Jonathan Perry for Modern Poacher Limited",
   "dependencies": {
-    "shinkansen-pantograph": "1.0.1"
+    "shinkansen-pantograph": "1.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.0",
@@ -32,11 +32,11 @@
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.6.0",
-    "@modernpoacher/deps": "0.0.6",
+    "@modernpoacher/deps": "0.0.12",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "core-js": "^3.2.1",
-    "eslint": "^6.3.0",
+    "eslint": "^6.4.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^10.0.0",
