@@ -12,10 +12,7 @@
     "babel:watch": "npm run babel -- -w",
     "lint": "eslint src",
     "lint:fix": "npm run lint -- --fix",
-    "pre-commit": "npm run lint && npm run babel && git add lib",
-    "deps": "deps",
-    "deps:prod": "deps --save-prod",
-    "deps:dev": "deps --save-dev"
+    "pre-commit": "npm run lint && npm run babel && git add lib"
   },
   "repository": {
     "type": "git",
@@ -24,27 +21,26 @@
   "license": "MIT",
   "author": "Jonathan Perry for Modern Poacher Limited",
   "dependencies": {
-    "shinkansen-pantograph": "1.0.2"
+    "shinkansen-pantograph": "1.0.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.6.0",
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.6.0",
-    "@modernpoacher/deps": "0.0.12",
-    "babel-eslint": "^10.0.3",
-    "babel-loader": "^8.0.6",
-    "core-js": "^3.2.1",
-    "eslint": "^6.4.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^10.0.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/register": "^7.9.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "core-js": "^3.6.4",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-standard": "^4.0.1",
-    "husky": "^3.0.5",
-    "rimraf": "^3.0.0"
+    "husky": "^4.2.3",
+    "rimraf": "^3.0.2"
   },
   "peerDependencies": {
     "react": "^16.9.0",
