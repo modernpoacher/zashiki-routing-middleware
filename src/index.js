@@ -44,6 +44,7 @@ export default (store) => {
         })
       }
     }
+
     return next(action)
   }
 }
