@@ -36,8 +36,12 @@ export default (store) => {
       if (history) {
         Pantograph.graphite({
           history: {
-            push: (location) => history.push(location),
-            getCurrentLocation: () => history.location
+            push (location) {
+              return history.push(location)
+            },
+            getCurrentLocation () {
+              return history.location
+            }
           },
           state: store.getState(),
           action
