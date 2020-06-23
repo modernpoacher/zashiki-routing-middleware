@@ -1,6 +1,12 @@
+import debug from 'debug'
+
 import {
   Pantograph
 } from 'shinkansen-pantograph'
+
+const log = debug('zashiki-routing-middleware')
+
+log('`zashiki-routing-middleware` is awake')
 
 export default (store) => {
   const {

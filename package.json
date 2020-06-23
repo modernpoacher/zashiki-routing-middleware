@@ -4,15 +4,17 @@
   "description": "Redux Routing middleware for Zashiki",
   "main": "./index.js",
   "scripts": {
-    "prepublishOnly": "npm run build",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "install": "npm run prepare",
     "prebuild": "npm run clean",
     "build": "npm run babel",
+    "build:watch": "npm run babel:watch",
     "clean": "rimraf lib",
     "babel": "babel src -d lib",
     "babel:watch": "npm run babel -- -w",
     "lint": "eslint src",
     "lint:fix": "npm run lint -- --fix",
-    "pre-commit": "npm run lint && npm run babel && git add lib"
+    "pre-commit": "npm run lint && npm run build && git add lib"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   "license": "MIT",
   "author": "Jonathan Perry for Modern Poacher Limited",
   "dependencies": {
+    "debug": "^4.1.1",
     "shinkansen-pantograph": "1.0.15"
   },
   "devDependencies": {
@@ -32,6 +35,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
     "eslint": "^7.3.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.21.2",
