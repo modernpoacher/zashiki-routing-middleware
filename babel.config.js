@@ -22,27 +22,27 @@ function env () {
 }
 
 const presets = [
-    [
-      '@babel/env', {
-        useBuiltIns: 'usage',
-        targets: {
-          node: 'current',
-          browsers: [
-            'last 2 versions'
-          ]
-        },
-        corejs: 3
-      }
-    ],
-    '@babel/react'
-  ]
+  [
+    '@babel/env', {
+      useBuiltIns: 'usage',
+      targets: {
+        node: '12.18.1',
+        browsers: [
+          'last 2 versions'
+        ]
+      },
+      corejs: 3
+    }
+  ],
+  '@babel/react'
+]
 
 module.exports = (api) => {
   if (api) api.cache.using(env)
 
   return {
-  compact: true,
-  comments: false,
-  presets
-}
+    compact: true,
+    comments: false,
+    presets
+  }
 }

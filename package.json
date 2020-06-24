@@ -4,15 +4,14 @@
   "description": "Redux Routing middleware for Zashiki",
   "main": "./index.js",
   "scripts": {
-    "prepare": "cross-env NODE_ENV=production npm run build",
-    "install": "npm run prepare",
+    "prepublishOnly": "cross-env NODE_ENV=production npm run build",
     "prebuild": "npm run clean",
     "build": "npm run babel",
     "build:watch": "npm run babel:watch",
     "clean": "rimraf lib",
     "babel": "babel src -d lib",
     "babel:watch": "npm run babel -- -w",
-    "lint": "eslint src",
+    "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "pre-commit": "npm run lint && npm run build && git add lib"
   },
@@ -21,6 +20,9 @@
     "url": "git://github.com/modernpoacher/zashiki-routing-middleware.git"
   },
   "license": "MIT",
+  "engines": {
+    "node": ">=12.18.1"
+  },
   "author": "Jonathan Perry for Modern Poacher Limited",
   "dependencies": {
     "debug": "^4.1.1",
