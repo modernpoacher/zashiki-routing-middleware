@@ -4,12 +4,9 @@ const log = debug('zashiki-routing-middleware')
 
 const {
   env: {
-    DEBUG = 'zashiki-routing-middleware',
     NODE_ENV = 'development'
   }
 } = process
-
-debug.enable(DEBUG)
 
 log('`zashiki-routing-middleware` is awake')
 
