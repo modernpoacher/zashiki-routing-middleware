@@ -1,6 +1,6 @@
 {
   "name": "zashiki-routing-middleware",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Redux Routing middleware for Zashiki",
   "main": "./index.js",
   "author": "Jonathan Perry for Modern Poacher Limited <modernpoacher@modernpoacher.com>",
