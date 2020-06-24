@@ -11,11 +11,10 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
       - run:
           name: Install
-          command: npm install
+          command: npm ci
       - run:
           name: Lint
           command: npm run lint
-
   publish:
     docker:
       - image: circleci/node:12.4.0
@@ -34,7 +33,7 @@ jobs:
 
             if [ "$VERSION" != "$PUBLISHED_VERSION" ]
             then
-              npm install
+              npm ci
               npm publish
             fi
 
