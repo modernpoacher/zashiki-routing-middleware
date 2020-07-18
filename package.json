@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "debug": "^4.1.1",
-    "shinkansen-pantograph": "1.0.17"
+    "shinkansen-pantograph": "1.0.18"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
