@@ -1,4 +1,4 @@
-## `zashiki-routing-middleware`
+## `@modernpoacher/zashiki-routing-middleware`
 
 # Zashiki Routing Middleware
 
