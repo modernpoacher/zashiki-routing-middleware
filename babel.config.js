@@ -34,8 +34,7 @@ const presets = [
       useBuiltIns: 'usage',
       corejs: 3
     }
-  ],
-  '@babel/react'
+  ]
 ]
 
 module.exports = (api) => {
