@@ -64,7 +64,10 @@ workflows:
   version: 2
   commit-workflow:
     jobs:
-      - lint
+      - lint_and_test:
+          filters:
+            branches:
+              only: master
       - publish:
           requires:
             - lint
