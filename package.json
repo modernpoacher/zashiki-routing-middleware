@@ -30,11 +30,11 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
-    "@babel/core": "^7.20.7",
+    "@babel/core": "^7.20.12",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.20.2",
     "@babel/register": "^7.18.9",
-    "babel-loader": "^9.1.0",
+    "babel-loader": "^9.1.2",
     "core-js": "^3.27.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.31.0",
