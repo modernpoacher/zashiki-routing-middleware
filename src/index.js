@@ -40,18 +40,15 @@ export default (store) => {
       } = action
 
       if (history) {
-        Pantograph.graphite({
-          history: {
-            push (location) {
-              return history.push(location)
-            },
-            getCurrentLocation () {
-              return history.location
-            }
-          },
+        const pathname = Pantograph.graphite({
+          action,
           state: store.getState(),
-          action
+          route: {
+            pathname: history.location
+          }
         })
+
+        if (pathname) history.push(pathname)
       }
     }
 
