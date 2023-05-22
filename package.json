@@ -1,6 +1,6 @@
 {
   "name": "zashiki-routing-middleware",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "Redux Routing middleware for Zashiki",
   "main": "./src/index.mjs",
   "type": "module",
