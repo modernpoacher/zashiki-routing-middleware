@@ -22,7 +22,7 @@
     "debug": "^4.3.4",
     "shinkansen-pantograph": "1.2.18",
     "shinkansen-rails": "1.0.53",
-    "shinkansen-signals": "1.1.36"
+    "shinkansen-signals": "1.1.39"
   },
   "devDependencies": {
     "@babel/core": "^7.21.8",
