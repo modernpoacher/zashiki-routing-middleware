@@ -16,19 +16,19 @@
   "scripts": {
     "lint": "eslint . --ext .mjs --ext .cjs",
     "lint:fix": "npm run lint -- --fix",
-    "prepare": "npx husky install"
+    "prepare": "husky install"
   },
   "dependencies": {
     "debug": "^4.3.4",
-    "shinkansen-pantograph": "1.2.18",
+    "shinkansen-pantograph": "1.2.19",
     "shinkansen-rails": "1.0.53",
     "shinkansen-signals": "1.1.36"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.8",
+    "@babel/core": "^7.22.1",
     "@babel/eslint-parser": "^7.21.8",
-    "@babel/preset-env": "^7.21.5",
-    "@modernpoacher/hooks": "^1.0.409",
+    "@babel/preset-env": "^7.22.2",
+    "@modernpoacher/hooks": "^1.0.411",
     "core-js": "^3.30.2",
     "cross-env": "^7.0.3",
     "eslint": "^8.41.0",
