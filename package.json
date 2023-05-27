@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "debug": "^4.3.4",
-    "shinkansen-pantograph": "1.2.21",
+    "shinkansen-pantograph": "1.2.22",
     "shinkansen-rails": "1.0.53",
     "shinkansen-signals": "1.1.36"
   },
