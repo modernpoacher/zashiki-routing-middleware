@@ -6,7 +6,7 @@ import {
 
 const log = debug('zashiki-routing-middleware')
 
-log('`zashiki-routing-middleware` is awake')
+log('`zashiki` is awake')
 
 export default (store) => {
   const {

@@ -8,7 +8,7 @@ const {
   }
 } = process
 
-log('`zashiki-routing-middleware` is awake')
+log('`zashiki` is awake')
 
 function env () {
   log({ NODE_ENV })
