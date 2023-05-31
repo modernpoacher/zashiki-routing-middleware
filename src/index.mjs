@@ -1,8 +1,6 @@
 import debug from 'debug'
 
-import {
-  Pantograph
-} from 'shinkansen-pantograph'
+import Pantograph, { graphite } from 'shinkansen-pantograph'
 
 const log = debug('zashiki-routing-middleware')
 
@@ -46,7 +44,7 @@ export default (store) => {
           } = {}
         } = router
 
-        const pathname = Pantograph.graphite({
+        const pathname = graphite({
           action: {
             type
           },
