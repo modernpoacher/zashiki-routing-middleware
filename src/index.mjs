@@ -36,19 +36,33 @@ export default (store) => {
       type === ALPHA_ROUTE
     ) {
       const {
-        history
+        router
       } = action
 
-      if (history) {
+      if (router) {
+        const {
+          location: {
+            pathname: currentPathname
+          } = {}
+        } = router
+
         const pathname = Pantograph.graphite({
-          action,
+          action: {
+            type
+          },
           state: store.getState(),
           route: {
-            pathname: history.location
+            pathname: currentPathname
           }
         })
 
-        if (pathname) history.push(pathname)
+        if (pathname !== currentPathname) {
+          const {
+            navigate
+          } = router
+
+          navigate(pathname)
+        }
       }
     }
 
